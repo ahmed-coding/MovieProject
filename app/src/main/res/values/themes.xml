@@ -11,5 +11,9 @@
             rounded
         </item>
         <item name="cornerSize">50%</item>
+        
+    </style>
+    <style name="Floating" parent="Widget.Design.FloatingActionButton">
+        <item name="android:foreground">@drawable/floating_background</item>
     </style>
 </resources>

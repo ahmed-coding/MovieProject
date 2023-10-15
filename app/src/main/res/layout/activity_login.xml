@@ -68,6 +68,15 @@
                 android:textAlignment="center"
                 />
 
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:text="نسيت كلمة السر؟" />
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_login"
                 style="@android:style/Widget.Button"
@@ -82,8 +91,27 @@
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="22sp"
-
                 />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:text="لاتملك حساب ؟"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:text="إنشاء حساب." />
 
 
         </LinearLayout>
