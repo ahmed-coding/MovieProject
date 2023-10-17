@@ -3,6 +3,7 @@
     <style name="Base.Theme.MovieProject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryDark">@color/main_background</item>
     </style>
 
     <style name="Theme.MovieProject" parent="Base.Theme.MovieProject" />
