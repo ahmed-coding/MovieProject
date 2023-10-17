@@ -18,7 +18,6 @@ public class DetailFilm {
     public List<Datum> getData() {
         return data;
     }
-
     public void setData(List<Datum> data) {
         this.data = data;
     }
