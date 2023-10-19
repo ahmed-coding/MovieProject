@@ -1,8 +1,10 @@
-package com.example.movieproject;
+package com.example.movieproject.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.movieproject.R;
 
 public class LoginActivity extends AppCompatActivity {
 
