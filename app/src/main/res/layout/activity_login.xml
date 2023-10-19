@@ -27,7 +27,7 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="تسجيل الدخول"
+                android:text="@string/login_header_text"
                 android:textColor="@color/white"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="128dp"
@@ -43,7 +43,7 @@
                 android:layout_marginBottom="16dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
-                android:hint="اسم المستخدم"
+                android:hint="User Name"
                 android:ems="10"
                 android:inputType="text"
                 android:textColor="@color/white"
@@ -59,7 +59,7 @@
                 android:layout_marginBottom="16dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
-                android:hint="كلمة السر"
+                android:hint="Password"
                 android:ems="10"
                 android:inputType="textPassword"
                 android:textColor="@color/white"
@@ -75,7 +75,7 @@
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textAlignment="center"
-                android:text="نسيت كلمة السر؟" />
+                android:text="Forget the Passwor!" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_login"
@@ -87,7 +87,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="تسجيل الدخول"
+                android:text="@string/login_header_text"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="22sp"
@@ -97,21 +97,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:textSize="22sp"
+                android:textSize="18sp"
                 android:textAlignment="center"
-                android:text="لاتملك حساب ؟"
+                android:text="Don't Have an account?"
                 android:layout_marginTop="30dp"
                 android:textStyle="bold"
                 />
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/txtCreateAccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:textAlignment="center"
-                android:text="إنشاء حساب." />
+                android:text="Create one new!"
+                android:layout_marginBottom="25dp"
+                />
 
 
         </LinearLayout>

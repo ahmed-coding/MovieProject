@@ -16,10 +16,10 @@ public class SharedPreferencesHelper {
     }
 
     // Save user data
-    public void saveUserData(String fullName, String email, String password) {
+    public void saveUserData(String fullName, String username, String password) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(KEY_FULL_NAME, fullName);
-        editor.putString(KEY_USERNAME, email);
+        editor.putString(KEY_USERNAME, username);
         editor.putString(KEY_PASSWORD, password);
         editor.apply();
     }

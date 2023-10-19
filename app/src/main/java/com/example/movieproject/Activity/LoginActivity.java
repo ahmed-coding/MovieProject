@@ -2,9 +2,9 @@ package com.example.movieproject.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +16,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText editTextUserName, editTextPassword;
     private Button btn_login;
     private String userName, password;
+    private TextView txtCreateAccount;
     private SharedPreferencesHelper sharedPreferences;
 
     @Override
@@ -33,19 +34,22 @@ public class LoginActivity extends AppCompatActivity {
         sharedPreferences = new SharedPreferencesHelper(getApplicationContext());
         userName = sharedPreferences.getUsername();
         password = sharedPreferences.getPassword();
-        btn_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (editTextUserName.getText().toString().isEmpty() || editTextPassword.getText().toString().isEmpty()){
-                    Toast.makeText(getApplicationContext(),"Please File your Username and Password Filed",Toast.LENGTH_LONG).show();
+        txtCreateAccount = (TextView) findViewById(R.id.txtCreateAccount);
+        btn_login.setOnClickListener(view -> {
+            if (editTextUserName.getText().toString().isEmpty() || editTextPassword.getText().toString().isEmpty()){
+                Toast.makeText(getApplicationContext(),"Please File your Username and Password Filed",Toast.LENGTH_LONG).show();
 
-                }else if (editTextUserName.getText().toString().equals(userName) && editTextPassword.getText().toString().equals(password)){
-                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                    startActivity(intent);
-                }
-                else Toast.makeText(getApplicationContext(),"Please Make Sure you have a password and username Correct", Toast.LENGTH_SHORT).show();
-
+            }else if (editTextUserName.getText().toString().equals(userName) && editTextPassword.getText().toString().equals(password)){
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
             }
+            else Toast.makeText(getApplicationContext(),"Please Make Sure you have a password and username Correct", Toast.LENGTH_SHORT).show();
+
         });
+        txtCreateAccount.setOnClickListener(view -> {
+            Intent intent =new Intent(getApplicationContext(), SignupActivity.class);
+            startActivity(intent);
+        });
+
     }
 }
