@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.LoginActivity"
+    tools:context=".Activity.SignupActivity"
     android:background="@color/main_background"
     >
 
@@ -27,10 +27,10 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/login_header_text"
+                android:text="@string/signup_header_text"
                 android:textColor="@color/white"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="128dp"
+                android:layout_marginTop="70dp"
                 android:textSize="50sp"
                 android:textStyle="bold"
                 />
@@ -68,6 +68,38 @@
                 android:textAlignment="center"
                 />
 
+            <EditText
+                android:id="@+id/editTextPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/btn_background"
+                android:ems="10"
+                android:hint="repite the password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/editTextfullName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/btn_background"
+                android:ems="10"
+                android:hint="Full Name"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
@@ -75,10 +107,10 @@
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textAlignment="center"
-                android:text="Forget the Passwor!" />
+                android:text="Forget the Password!" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_login"
+                android:id="@+id/btnSignup"
                 style="@android:style/Widget.Button"
                 android:background="@drawable/btn_background"
                 android:layout_marginEnd="32dp"
@@ -87,7 +119,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="@string/login_header_text"
+                android:text="@string/signup_header_text"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="22sp"
@@ -99,19 +131,20 @@
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textAlignment="center"
-                android:text="Don't Have an account?"
+                android:text="Allredy Have an account?"
                 android:layout_marginTop="30dp"
                 android:textStyle="bold"
                 />
             <TextView
-                android:id="@+id/txtCreateAccount"
+                android:id="@+id/textLogin"
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:textAlignment="center"
-                android:text="Create one new!"
+                android:text="Login new."
                 android:layout_marginBottom="25dp"
                 />
 
