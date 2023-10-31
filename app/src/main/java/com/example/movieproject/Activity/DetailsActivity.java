@@ -65,7 +65,6 @@ public class DetailsActivity extends AppCompatActivity {
             if (items.getImages() != null){
                 adapterImageList = new ImageListAdapter(items.getImages());
                 recyclerView.setAdapter(adapterImageList);
-
             }
 
 
